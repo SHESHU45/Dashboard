@@ -1,11 +1,10 @@
-
 import Link from 'next/link'
 import React from 'react'
 import Image from "next/image";
 
 import "./Card.css"
 
-export default function Card({ image, title, para }) {
+export default function Card({ image, title}) {
     return (
         <div className='Card w-[400px] h-[150px] flex'>
             <div className='photo-card w-[50%] h-[100%] bg-pink'>

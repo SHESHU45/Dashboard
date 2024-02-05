@@ -42,10 +42,6 @@ export default function Home() {
           <h2 className="text-[35px] font-semibold">Hello Admin,</h2>
           <p className="text-[17px] text-[#323444] ">This is what we got you for today.</p>
           <div className="admincard grid lg:grid-cols-4 xl:grid-cols-4  mt-5  sm:grid-cols-2  text-[center] ">
-            {/* <AdminCard heading="Articles" text="4,950 New Updates" image='helloadmin1.png' />
-            <AdminCard heading="Categories" text="10,275 New Updates" image='helloadmin2.png' />
-            <AdminCard heading="Stories" text="4,193 New Updates" image='helloadmin3.png' />
-            <AdminCard heading="Advertisements" text="928 New Updates" image='helloadmin4.png' /> */}
             {
               articlesData.map((article,id)=>{
                return (<AdminCard heading={article.heading} text={article.text} image={article.image} key={id} />)
@@ -55,7 +51,6 @@ export default function Home() {
 
           </div>
         </section>
-        {/* ***************Top articles ***** */}
         <section>
           <div className="flex justify-between w-full pr-5">
             <h2 className="text-[24px] font-semibold">Top Articles</h2>
@@ -91,7 +86,6 @@ export default function Home() {
 
           </div>
         </section>
-        {/* ***************Top Stories ***** */}
         <section>
           <div className="flex justify-between w-full pr-5">
             <h2 className="text-[24px] font-semibold">Top Stories</h2>
