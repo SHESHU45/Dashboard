@@ -1,0 +1,17 @@
+.admincard {}
+
+@media only screen and (max-width: 500px) {
+    body {
+        background-color: lightblue;
+    }
+
+    .admincard {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .page-main-navbar {
+        display: none;
+    }
+}

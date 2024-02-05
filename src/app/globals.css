@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --violet-dark: #7950F2;
+    --violet-light: #E8E9FF;
+    --violet-text: #9058FF;
+    --grey-text: #A0A3BD;
+    ;
+
+}
+
+body {
+    overflow-x: hidden;
+    /* width: 100%; */
+}
+
+.card-hex-items {
+    /* display: flex; */
+    
+    /* overflow-x: auto; */
+   
+}

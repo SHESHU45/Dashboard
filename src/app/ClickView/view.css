@@ -1,0 +1,64 @@
+.navbar {
+    display: flex;
+}
+
+.page-card {
+    width: 400px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.card-page-unique {
+    width: 100%;
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    background-image: url("/topstory1.png");
+    /* Background image */
+    background-size: cover;
+    background-position: center;
+
+}
+
+.card-text-1 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+
+    padding: 10px;
+    color: white;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+
+
+    margin-left: 360px;
+    margin-bottom: 30px;
+    width: 300px;
+    z-index: 1;
+}
+
+.card-page-unique::before {
+    content: '';
+    /* Create a pseudo-element to overlay the background */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+    /* Semi-transparent white color for brightness */
+}
+
+.card-page-unique img {
+    position: relative;
+    z-index: 1;
+    /* Ensure that the image appears above the blurred background */
+}
+.card-text-1 p{
+    font-size: 12px;
+}
